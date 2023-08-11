@@ -2,7 +2,7 @@
 Chess Game is a basic console Java chess game.
 
 # Use-Case:
-![Chess Game Use-Case] (chessGameUseCase.jpg)
+![chessGameUseCase.jpg](https://github.com/Larisa-Pomidor/ChessGame/blob/master/chessGameUseCase.jpg)
 
 ## Functional Requirements:
 
