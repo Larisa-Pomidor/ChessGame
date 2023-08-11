@@ -72,3 +72,5 @@ Chess Game is a basic console Java chess game.
 - Piece - Color Relationship: Each Piece object has a Color attribute that determines whether it's white or black.
 - Board - Piece Relationship: The Board class maintains a 2D array of Figure objects.
 
+# Class Diagram:
+![ChessGameClassDiagram.jpg](https://github.com/Larisa-Pomidor/ChessGame/blob/master/ChessGameClassDiagram.jpg)
