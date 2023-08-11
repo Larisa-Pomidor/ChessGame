@@ -1,7 +1,7 @@
 # ChessGame
 Chess Game is a basic console Java chess game.
 
-### Functional Requirements:
+## Functional Requirements:
 
 **Game Setup:** 
 - The game should start with the initial setup of the chessboard, including the placement of all pieces in their standard positions.
@@ -29,7 +29,7 @@ Chess Game is a basic console Java chess game.
 - The game should detect when a checkmate occurs, indicating a win for one player.
 - If a player's king is in a position that cannot be moved to any safe square, the game should declare a checkmate.
   
-### Non-Functional Requirements:
+## Non-Functional Requirements:
 
 **User Interface:**
 
@@ -40,3 +40,32 @@ Chess Game is a basic console Java chess game.
 **Performance:**
 
 - The game should respond promptly to player actions.
+
+# Objects, classes, and relationships:
+
+**Objects:**
+
+- Game: Represents the chess game itself. Contains players, a board, and manages the game flow.
+- Player: Represents a player participating in the game. Contains the player's name, color (white or black), and manages their turns.
+- Board: Represents the chessboard, which is an 8x8 grid of squares. Contains the state of the pieces on the board.
+- Square: Represents a single square on the chessboard. May contain a piece or be empty.
+- Piece: Represents a chess piece (pawn, rook, knight, bishop, queen, king). Contains information about its type, color, and movement rules.
+- Move: Represents a move made by a player, indicating the starting and ending positions of a piece.
+
+**Classes:**
+
+- Game: Manages the overall game state, including player turns, board state, and game over conditions.
+- Player: Defines player attributes such as name, color, and manages their turn status.
+- Board: Represents the chessboard and contains the 2D array of squares.
+- Figure: Defines the attributes and behavior of different chess pieces.
+- FigureName: Enum class defining the different types of chess pieces.
+- Color: Enum class defining the colors of chess pieces.
+
+**Relationships:**
+
+- Game - Player Relationship: The Game class contains instances of two Player objects representing the two participants in the game.
+- Game - Board Relationship: The Game class contains an instance of the Board class to manage the state of the chessboard.
+- Piece - FigureName Relationship: Each Piece object has a FigureName attribute that indicates the type of chess piece it represents (KING, QUEEN, ROOK, etc.).
+- Piece - Color Relationship: Each Piece object has a Color attribute that determines whether it's white or black.
+- Board - Piece Relationship: The Board class maintains a 2D array of Figure objects.
+
