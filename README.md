@@ -1,6 +1,9 @@
 # ChessGame
 Chess Game is a basic console Java chess game.
 
+# Use-Case:
+![Chess Game Use-Case] (chessGameUseCase.jpg)
+
 ## Functional Requirements:
 
 **Game Setup:** 
